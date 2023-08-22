@@ -7,4 +7,41 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <!-- Light Blue Shades -->
+    <color name="tailwind_blue_50">#f0f9ff</color>
+    <color name="tailwind_blue_100">#e0f2fe</color>
+    <color name="tailwind_blue_200">#bae6fd</color>
+    <color name="tailwind_blue_300">#7dd3fc</color>
+    <color name="tailwind_blue_400">#38bdf8</color>
+    <color name="tailwind_blue_500">#0ea5e9</color>
+
+    <!-- Dark Blue Shades -->
+    <color name="tailwind_blue_600">#0284c7</color>
+    <color name="tailwind_blue_700">#0369a1</color>
+    <color name="tailwind_blue_800">#075985</color>
+    <color name="tailwind_blue_900">#0c4a6e</color>
+
+    <!-- Accent Blue Shades -->
+    <color name="tailwind_blue_a100">#82b1ff</color>
+    <color name="tailwind_blue_a200">#448aff</color>
+    <color name="tailwind_blue_a400">#2979ff</color>
+    <color name="tailwind_blue_a700">#2962ff</color>
+    <color name="tailwind_red_50">#fff5f5</color>
+    <color name="tailwind_red_100">#fed7d7</color>
+    <color name="tailwind_red_200">#feb2b2</color>
+    <color name="tailwind_red_300">#fc8181</color>
+    <color name="tailwind_red_400">#f56565</color>
+    <color name="tailwind_red_500">#e53e3e</color>
+
+    <!-- Dark Red Shades -->
+    <color name="tailwind_red_600">#c53030</color>
+    <color name="tailwind_red_700">#9b2c2c</color>
+    <color name="tailwind_red_800">#742a2a</color>
+    <color name="tailwind_red_900">#521b1b</color>
+
+    <!-- Accent Red Shades -->
+    <color name="tailwind_red_a100">#ff6b6b</color>
+    <color name="tailwind_red_a200">#fc5151</color>
+    <color name="tailwind_red_a400">#f23c3c</color>
+    <color name="tailwind_red_a700">#e02f2f</color>
 </resources>
