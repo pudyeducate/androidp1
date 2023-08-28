@@ -12,8 +12,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityMainBinding.inflate(layoutInflater)
         val text = binding.nama.text
-        binding.signupButton.setOnClickListener { view ->
-            Toast.makeText(this, text, Toast.LENGTH_SHORT).show()
+        with(binding){
+            signupButton.setOnClickListener { view ->
+                Toast.makeText(this@MainActivity, text, Toast.LENGTH_SHORT).show()
+            }
         }
         setContentView(binding.root)
     }
