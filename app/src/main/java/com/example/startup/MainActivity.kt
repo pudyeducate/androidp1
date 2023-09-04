@@ -8,15 +8,15 @@ import com.example.startup.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate   (savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding = ActivityMainBinding.inflate(layoutInflater)
-        val text = binding.nama.text
-        with(binding){
-            signupButton.setOnClickListener { view ->
-                Toast.makeText(this@MainActivity, text, Toast.LENGTH_SHORT).show()
-            }
-        }
+//        val text = binding.nama.text
+//        with(binding){
+//            signupButton.setOnClickListener { view ->
+//                Toast.makeText(this@MainActivity, text, Toast.LENGTH_SHORT).show()
+//            }
+//        }
         setContentView(binding.root)
     }
 }
