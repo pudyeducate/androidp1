@@ -26,6 +26,7 @@
     <color name="tailwind_blue_a200">#448aff</color>
     <color name="tailwind_blue_a400">#2979ff</color>
     <color name="tailwind_blue_a700">#2962ff</color>
+    <color name="tailwind_blue_a800">#295FA6</color>
     <color name="tailwind_red_50">#fff5f5</color>
     <color name="tailwind_red_100">#fed7d7</color>
     <color name="tailwind_red_200">#feb2b2</color>

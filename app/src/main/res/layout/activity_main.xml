@@ -5,85 +5,127 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/image_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bg_login"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:layout_above="@+id/login_welcome_text"
+        android:layout_marginBottom="16dp" />
+
     <TextView
-        android:id="@+id/txt_title"
+        android:id="@+id/login_welcome_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="@string/app_name"
-        android:textSize="24sp"
-        android:textStyle="bold"/>
-    <ImageView
-        android:id="@+id/img_phone"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_below="@+id/txt_title"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/samsung"
-        android:importantForAccessibility="no" />
+        android:text="@string/login_welcome"
+        android:textColor="@color/black"
+        android:layout_above="@id/login_desc_text"
+        android:textSize="28sp"/>
+
     <TextView
-        android:id="@+id/txt_phone_name"
+        android:id="@+id/login_desc_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/img_phone"
-        android:layout_marginTop="20dp"
-        android:text="@string/phone_name"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-    <TextView
-        android:id="@+id/txt_phone_price"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/img_phone"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="20dp"
-        android:text="@string/phone_price"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-    <TextView
-        android:id="@+id/txt_description"
+        android:layout_centerHorizontal="true"
+        android:text="@string/login_desc"
+        android:textSize="16sp"
+        android:layout_centerInParent="true"
+
+        android:layout_marginVertical="10dp"
+        android:textAlignment="center"/>
+
+    <RelativeLayout
+        android:id="@+id/email_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txt_phone_name"
-        android:layout_marginTop="16dp"
-        android:text="@string/phone_description"/>
-    <ImageView
-        android:id="@+id/ic_memory"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txt_description"
-        android:layout_marginTop="8dp"
-        android:src="@drawable/baseline_smartphone_24"
-        android:importantForAccessibility="no" />
+        android:layout_below="@+id/login_desc_text"
+        >
     <TextView
-        android:id="@+id/txt_memory"
+        android:id="@+id/email_log_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/ic_memory"
-        android:layout_alignBottom="@+id/ic_memory"
-        android:layout_toEndOf="@+id/ic_memory"
-        android:text="@string/memory" />
-    <ImageView
-        android:id="@+id/ic_camera"
-        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/email"
+        android:layout_alignParentStart="true"
+        android:textSize="16sp"
+        android:layout_marginVertical="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+
+        />
+    <EditText
+        android:id="@+id/email_field"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/ic_memory"
-        android:layout_marginTop="8dp"
-        android:src="@drawable/baseline_camera_24"
-        android:importantForAccessibility="no" />
-    <TextView
-        android:id="@+id/txt_camera"
-        android:layout_width="wrap_content"
+        android:inputType="textEmailAddress"
+        android:autofillHints="emailAddress"
+        android:layout_below="@+id/email_log_label"
+        android:background="@drawable/input"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        tools:ignore="LabelFor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/password_layout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/ic_camera"
-        android:layout_alignBottom="@+id/ic_camera"
-        android:layout_toEndOf="@+id/ic_camera"
-        android:text="@string/camera" />
+        android:layout_below="@+id/email_layout"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:id="@+id/password_log_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/password"
+            android:layout_alignParentStart="true"
+            android:textSize="16sp"
+            android:layout_marginVertical="5dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            />
+        <EditText
+            android:id="@+id/password_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:autofillHints="emailAddress"
+            android:layout_below="@+id/password_log_label"
+            android:background="@drawable/input"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            tools:ignore="LabelFor" />
+    </RelativeLayout>
+
     <Button
+        android:id="@+id/button_log"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="@string/login_go"
+        android:backgroundTint="@color/tailwind_blue_a800"
+        />
+    <TextView
+        android:id="@+id/logintoreg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:drawableLeft="@drawable/baseline_bookmark_24"
-        android:text="@string/bookmark"
-        tools:ignore="RtlHardcoded" />
+        android:layout_centerHorizontal="true"
+        android:text="@string/login_to_reg"
+        android:layout_alignParentStart="true"
+        android:textSize="16sp"
+
+        android:layout_below="@+id/button_log"
+        android:layout_marginVertical="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/tailwind_blue_a800"
+        />
+
+
+
 </RelativeLayout>
